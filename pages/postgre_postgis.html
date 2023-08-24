@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets//favicon.ico" />
+
+    <title>Spatial Sense Blog | PostgreSQL & PostGIS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav class="navbar flex justify-between items-center py-4">
+      <a href="/index.html" class="flex items-center">
+        <img
+          src="/assets/images/logo.svg"
+          alt="spatial sense logo"
+          class="w-1/2 sm:w-full m-4"
+        />
+      </a>
+      <div>
+        <ul class="flex justify-between space-x-4 mr-12">
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="/pages//about.html">About</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn hover:text-blue-700">Blog</a>
+            <ul
+              class="dropdown-content absolute hidden mt-2 space-y-2 bg-white border border-gray-100 rounded-lg group-hover:block"
+              style="min-width: 150px"
+            >
+              <li>
+                <a
+                  href="/pages/html_css.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >HTML & CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/javascript.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Javascript</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/leaflet_openlayers.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Leaflet & OpenLayers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/geoserver.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Geoserver</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/postgre_postgis.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >PostgreSQL & PostGIS</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="/pages/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="mb-20">
+      <div class="mx-auto pt-24">
+        <h1 class="text-3xl text-center">
+          What Is <b>PostgreSQL?</b> What is <b>PostGIS?</b>
+        </h1>
+        <div class="grid grid-cols-2 text-center text-xs">
+          <p class="text-end">Written by: PostGIS PSC & OSGeo |</p>
+          <p class="text-start px-2">
+            <b>Published in</b>
+            <a href="https://postgis.net/">Postgis.net</a>
+          </p>
+        </div>
+      </div>
+      <div class="mx-auto p-14 w-full lg:w-1/2">
+        <h1 class="font-black mb-2">What is PostgreSQL?</h1>
+        <p>
+          PostgreSQL is a powerful, open-source object-relational database
+          system known for reliability, feature robustness, and performance.
+          It’s best suited for situations that require heavy custom coding or
+          strict data integrity. It is important to get a reliable hosting for
+          PostgreSQL.
+        </p>
+        <h1 class="font-black mb-2 mt-8">What is PostGIS?</h1>
+        <p>
+          PostGIS extends the capabilities of the PostgreSQL relational database
+          by adding support storing, indexing and querying geographic data.
+        </p>
+      </div>
+      <img
+        src="/assets/images/PostGIS-stack.webp"
+        alt="illustration of Postgis"
+        class="mx-auto px-14 w-full lg:w-1/2 mt-4"
+      />
+      <p class="text-center text-gray-500 text-xs py-2">
+        <a href="https://www.crunchydata.com/blog/postgis-for-newbies"
+          >Illustration of PostGIS For Newbies | by Elizabeth Christensen
+        </a>
+      </p>
+
+      <div class="mx-auto px-14 py-4 w-full lg:w-1/2">
+        <p>
+          The combination of PostgreSQL and PostGIS is widely used in
+          applications that require spatial analysis, geographic information
+          systems (GIS), mapping, and location-based services. It allows
+          developers to build applications that integrate spatial data
+          seamlessly with other types of data stored in the database. For
+          example, you could use PostgreSQL and PostGIS to store and analyze
+          data related to maps, geographical features, addresses, routes, and
+          more.
+        </p>
+        <h1 class="font-black mb-2 mt-8">Some of PostGIS features :</h1>
+        <ul class="text-md">
+          <li class="mb-2">
+            <b>1. Spatial Data Storage: </b>Store different types of spatial
+            data such as points, lines, polygons, and multi-geometries, in both
+            2D and 3D data.
+          </li>
+          <li class="mb-2">
+            <b>2. Spatial Indexing: </b>Quickly search and retrieve spatial data
+            based on its location.
+          </li>
+          <li class="mb-2">
+            <b>3. Spatial Data Storage: </b>Store different types of spatial
+            data such as points, lines, polygons, and multi-geometries, in both
+            2D and 3D data.
+          </li>
+          <li class="mb-2">
+            <b>4. Spatial Functions: </b>A wide range of spatial functions that
+            allow you to filter and analyze spatial data, measuring distances
+            and areas, intersecting geometries, buffering, and more.
+          </li>
+
+          <li class="mb-2">
+            <b>5. Geometry Processing: </b>Tools for processing and manipulating
+            geometry data, such as simplification, conversion, and
+            generalization.
+          </li>
+          <li class="mb-2">
+            <b>6. Raster Data Support: </b>Storage and processing of raster
+            data, such as elevation data and weather data.
+          </li>
+          <li class="mb-2">
+            <b>7. Geocoding and Reverse Geocoding: </b>Functions for geocoding
+            and reverse geocoding.
+          </li>
+          <li class="mb-2">
+            <b>8. Integration: </b>Access and work with PostGIS using third
+            party tools such as QGIS, GeoServer, MapServer, ArcGIS, Tableau.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <div class="bg-gray-900 text-white py-2 text-center text-xs">
+        Copyright &#169; 2023 <br />SpatialSense by Almira Mahsa. All rights
+        reserved.
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

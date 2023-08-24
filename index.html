@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets//favicon.ico" />
+
+    <title>SpatialSense | GIS Insight</title>
+  </head>
+  <body>
+    <nav class="navbar flex justify-between items-center py-4">
+      <a href="#" class="flex items-center">
+        <img
+          src="/assets/images/logo.svg"
+          alt="spatial sense logo"
+          class="w-1/2 sm:w-full m-4"
+        />
+      </a>
+      <div>
+        <ul class="flex justify-between space-x-4 mr-12">
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="#">Home</a>
+          </li>
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="/pages//about.html">About</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn hover:text-blue-700">Blog</a>
+            <ul
+              class="dropdown-content absolute hidden mt-2 space-y-2 bg-white border border-gray-100 rounded-lg group-hover:block"
+              style="min-width: 150px"
+            >
+              <li>
+                <a
+                  href="/pages/html_css.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >HTML & CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/javascript.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Javascript</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/leaflet_openlayers.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Leaflet & OpenLayers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/geoserver.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Geoserver</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/postgre_postgis.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >PostgreSQL & PostGIS</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="/pages/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="relative">
+      <div
+        class="absolute top-2/3 transform -translate-y-1/2 bg-gray-100 bg-opacity-50 p-4 rounded-md shadow-md z-10 md:h-1/2 lg:h-1/2 w-2/3 xl:w-1/2"
+      >
+        <div class="md:mt-10 text-end">
+          <p class="justify-end text-gray-700 text-xs md:text-md lg-text-md">
+            Free & Open Source
+          </p>
+          <p
+            class="justify-end text-gray-900 font-black text-md sm:text-md lg:text-4xl"
+          >
+            Web-GIS Development Roadmap
+          </p>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="/assets/images/rounded_bg.png" />
+      </div>
+      <div class="map">
+        <img
+          src="/assets/images/spatial_sense_bg.png"
+          class="w-full h-full object-cover"
+          alt="bg"
+        />
+      </div>
+    </section>
+    <div class="container mx-auto px-4 mt-20 mb-20">
+      <section class="grid grid-cols-2 gap-8 ml-4 md:ml-20">
+        <div class="rounded-2 w-1/4 animate-blink">
+          <img src="/assets/images/rounded_bg.png" />
+        </div>
+        <div
+          class="flex flex-col justify-center align-center items-start w-full lg:w-2/3 mt-12"
+        >
+          <h5 class="text-gray-900 text-2xl md:text-4xl mb-4 font-semibold">
+            Open Source Web GIS Tools
+          </h5>
+          <p>
+            Today, solutions enabling web-based geographic information creation,
+            analysis, and visualization are increasingly common.
+          </p>
+          <button
+            class="mt-6 g-transparent text-sm hover:bg-slate-500 text-gray-700 font-semibold hover:text-white hover:text-sm py-2 px-4 border border-gray-500 hover:border-transparent rounded"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="software pl-5 md:pl-15 lg:pl-40">
+          <div class="flex justify-start">
+            <div class="flex justify-start items-center">
+              <div class="gambar-container hidden gambarContainer">
+                <img
+                  class="w-68 h-42"
+                  src="/assets/images/html_css.svg"
+                  class="gambar"
+                  alt="HTML & CSS"
+                />
+                <a
+                  href="/pages/html_css.html"
+                  class="mt-2 text-center learn-more-link text-xs text-gray-400 hover:text-blue-600 hover:cursor-pointer hidden animate-blink"
+                  >Read Article</a
+                >
+              </div>
+              <button
+                class="software-button justify-start mt-6 g-transparent text-sm text-gray-700 font-semibold hover:text-sm py-2 px-4 hover:border hover:border-gray-500 hover:rounded"
+                data-angka="1"
+              >
+                HTML & CSS
+                <a class="learn-more-link hidden">Learn More</a>
+              </button>
+            </div>
+          </div>
+          <div class="flex justify-start">
+            <div class="flex justify-start items-center mt-4">
+              <div class="gambar-container hidden gambarContainer">
+                <img
+                  class="w-68 h-42"
+                  src="/assets/images/js.svg"
+                  class="gambar"
+                  alt="Javascript"
+                />
+                <a
+                  class="mt-2 text-center learn-more-link text-xs text-gray-400 hover:text-blue-600 hover:cursor-pointer hidden animate-blink"
+                  href="/pages/javascript.html"
+                  >Read Article</a
+                >
+              </div>
+              <button
+                class="software-button justify-start mt-6 g-transparent text-sm text-gray-700 font-semibold hover:text-sm py-2 px-4 hover:border hover:border-gray-500 hover:rounded"
+                data-angka="2"
+              >
+                Javascript
+              </button>
+            </div>
+          </div>
+          <div class="flex justify-start">
+            <div class="flex justify-start items-center mt-4">
+              <div class="gambar-container hidden gambarContainer">
+                <img
+                  class="w-68 h-42"
+                  src="/assets/images/leaflet_openlayers.svg"
+                  class="gambar"
+                  alt=" Leaflet & OpenLayers"
+                />
+                <a
+                  class="mt-2 text-center learn-more-link text-xs text-gray-400 hover:text-blue-600 hover:cursor-pointer hidden animate-blink"
+                  href="/pages/leaflet_openlayers.html"
+                  >Read Article</a
+                >
+              </div>
+              <a
+                class="software-button justify-start mt-6 g-transparent text-sm text-gray-700 font-semibold hover:text-sm py-2 px-4 hover:border hover:border-gray-500 hover:rounded"
+                data-angka="3"
+              >
+                Leaflet & OpenLayers
+              </a>
+            </div>
+          </div>
+          <div class="flex justify-start">
+            <div class="flex justify-start items-center mt-4">
+              <div class="gambar-container hidden gambarContainer">
+                <img
+                  class="w-68 h-42"
+                  src="/assets/images/geoserver.svg"
+                  class="gambar"
+                  alt="Geoserver"
+                />
+                <a
+                  class="mt-2 text-center learn-more-link text-xs text-gray-400 hover:text-blue-600 hover:cursor-pointer hidden animate-blink"
+                  href="/pages/geoserver.html"
+                  >Read Article</a
+                >
+              </div>
+              <button
+                class="software-button justify-start mt-6 g-transparent text-sm text-gray-700 font-semibold hover:text-sm py-2 px-4 hover:border hover:border-gray-500 hover:rounded"
+                data-angka="4"
+              >
+                Geoserver
+              </button>
+            </div>
+          </div>
+          <div class="flex justify-start">
+            <div class="flex justify-start items-center mt-4">
+              <div class="gambar-container hidden gambarContainer">
+                <img
+                  class="w-68 h-42"
+                  src="/assets/images/postgre_postgis.svg"
+                  class="gambar"
+                  alt="PostgreSQL & PostGIS"
+                />
+                <a
+                  class="mt-2 text-center learn-more-link text-xs text-gray-400 hover:text-blue-600 hover:cursor-pointer hidden animate-blink"
+                  href="/pages/postgre_postgis.html"
+                  >Read Article</a
+                >
+              </div>
+              <button
+                class="software-button justify-start mt-6 g-transparent text-sm text-gray-700 font-semibold hover:text-sm py-2 px-4 hover:border hover:border-gray-500 hover:rounded"
+                data-angka="5"
+              >
+                PostgreSQL & PostGIS
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="bg-gray-900 text-white py-2 text-center text-xs">
+        Copyright &#169; 2023 <br />SpatialSense by Almira Mahsa. All rights
+        reserved.
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

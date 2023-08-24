@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets//favicon.ico" />
+    <title>Spatial Sense | About</title>
+  </head>
+  <body>
+    <nav class="navbar flex justify-between items-center py-4">
+      <a href="#" class="flex items-center">
+        <img
+          src="/assets/images/logo.svg"
+          alt="spatial sense logo"
+          class="w-1/2 sm:w-full m-4"
+        />
+      </a>
+      <div>
+        <ul class="flex justify-between space-x-4 mr-12">
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="/pages//about.html">About</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn hover:text-blue-700">Blog</a>
+            <ul
+              class="dropdown-content absolute hidden mt-2 space-y-2 bg-white border border-gray-100 rounded-lg group-hover:block"
+              style="min-width: 150px"
+            >
+              <li>
+                <a
+                  href="/pages/html_css.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >HTML & CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/javascript.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Javascript</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/leaflet_openlayers.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Leaflet & OpenLayers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/geoserver.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Geoserver</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/postgre_postgis.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >PostgreSQL & PostGIS</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="/pages/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="mb-20">
+      <div class="mx-auto py-24 ">
+        <h1 class="text-3xl text-center">
+          Spatial Sense <span class="font-bold">Product Trial</span>
+        </h1>
+        <p class="text-slate-600 w-full md:w-1/2 mx-auto mt-4">
+          Experience our Geolocation API, a service that accepts an HTTPS
+          request containing information about cell towers and WiFi access
+          points detected by a mobile client. This API provides
+          latitude/longitude coordinates and a radius that indicates the
+          accuracy of the result for each valid input.
+        </p>
+       
+      </div>
+      <div class="w-full md:w-1/2 mx-auto mt-4">
+        <h1 class="my-6 font-bold">Information Browser Support</h1>
+        <p class="my-4 text-sm">The numbers in the table specify the first browser version that fully supports Geolocation.</p>
+        <img class="w-2/3" src="/assets/images/browser.png"></img>
+      </div>
+      <div class="w-full md:w-1/2 mx-auto mt-4 border px-20 py-10">
+        <p>Click the button to get your coordinates.</p>
+
+        <button class="bg-blue-600 my-4 py-2 px-4 rounded-xl text-white hover:shadow-xl hover:bg-blue-800" onclick="getLocation()">Get coordinates</button>
+
+        <p id="demo"></p>
+      </div>
+    </section>
+    <footer>
+      <div class="bg-gray-900 text-white py-2 text-center text-xs">
+        Copyright &#169; 2023 <br />SpatialSense by Almira Mahsa. All rights reserved.
+      </div>
+    </footer>
+    
+    <script src="/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets//favicon.ico" />
+    <title>Spatial Sense | Contact</title>
+  </head>
+  <body>
+    <nav class="navbar flex justify-between items-center py-4">
+      <a href="#" class="flex items-center">
+        <img
+          src="/assets/images/logo.svg"
+          alt="spatial sense logo"
+          class="w-1/2 sm:w-full m-4"
+        />
+      </a>
+      <div>
+        <ul class="flex justify-between space-x-4 mr-12">
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="/pages//about.html">About</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn hover:text-blue-700">Blog</a>
+            <ul
+              class="dropdown-content absolute hidden mt-2 space-y-2 bg-white border border-gray-100 rounded-lg group-hover:block"
+              style="min-width: 150px"
+            >
+              <li>
+                <a
+                  href="/pages/html_css.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >HTML & CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/javascript.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Javascript</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/leaflet_openlayers.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Leaflet & OpenLayers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/geoserver.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Geoserver</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/postgre_postgis.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >PostgreSQL & PostGIS</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="/pages/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="representatives mb-20">
+      <div class="mx-auto pt-24 text-center">
+        <h1 class="text-3xl">
+          Meet Our <span class="font-bold">Representatives</span>
+        </h1>
+        <p class="text-slate-600 w-full md:w-1/2 mx-auto mt-4">
+          Spatial Sense has made agreements with the following international
+          representatives. No other companies than the ones listed here have the
+          right to claim that they are representatives of the company.
+        </p>
+      </div>
+      <div id="data-container" class="mx-auto px-4 md:px-24 w-full md:w-1/2 mx-auto mt-12 p-4  ">
+    </section>
+    <section class="bg-gray-100 my-20">
+      <div class="mx-auto px-24 py-12">
+        <p class="mb-10 font-bold text-xl">Subscribe to our newsletter:</p>
+        <form id="subscription-form" class="w-full max-w-lg">
+          <div class="flex flex-wrap -mx-3 mb-6">
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="grid-full-name"
+              >
+                Fullname
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                id="grid-full-name"
+                type="text"
+                placeholder="Your Name"
+              />
+              
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="grid-email"
+              >
+                Email
+              </label>
+              <input
+                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                id="grid-email"
+                type="email"
+                placeholder="emailmu@example.com"
+                required
+              />
+            </div>
+          </div>
+          <button
+            class="bg-blue-600 my-4 py-2 px-4 rounded-xl text-white hover:shadow-xl hover:bg-blue-800"
+            type="submit"
+          >
+            Subscribe
+          </button>
+        </form>
+        <p id="subscription-message"></p>      </div>
+    </section>
+    <footer>
+      <div class="bg-gray-900 text-white py-2 text-center text-xs">
+        Copyright &#169; 2023 <br />SpatialSense by Almira Mahsa. All rights reserved.
+      </div>
+    </footer>
+    <script src="/index.js"></script>
+  </body>
+</html>

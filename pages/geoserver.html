@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets//favicon.ico" />
+    <title>Spatial Sense Blog | Geoserver</title>
+  </head>
+  <body>
+    <nav class="navbar flex justify-between items-center py-4">
+      <a href="#" class="flex items-center">
+        <img
+          src="/assets/images/logo.svg"
+          alt="spatial sense logo"
+          class="w-1/2 sm:w-full m-4"
+        />
+      </a>
+      <div>
+        <ul class="flex justify-between space-x-4 mr-12">
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="/pages//about.html">About</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn hover:text-blue-700">Blog</a>
+            <ul
+              class="dropdown-content absolute hidden mt-2 space-y-2 bg-white border border-gray-100 rounded-lg group-hover:block"
+              style="min-width: 150px"
+            >
+              <li>
+                <a
+                  href="/pages/html_css.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >HTML & CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/javascript.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Javascript</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/leaflet_openlayers.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Leaflet & OpenLayers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/geoserver.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Geoserver</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/postgre_postgis.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >PostgreSQL & PostGIS</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="/pages/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="mb-20">
+      <div class="mx-auto pt-24">
+        <h1 class="text-3xl text-center">What Is <b>Geoserver?</b></h1>
+        <div class="grid grid-cols-2 text-center text-xs">
+          <p class="text-end">Written by: Geoserver |</p>
+          <p class="text-start px-2">
+            <b>Published in</b>
+            <a href="https://geoserver.org/about/">geoserver.org</a>
+          </p>
+        </div>
+      </div>
+      <div class="mx-auto p-14 w-full lg:w-1/2">
+        <h1 class="font-black mb-2">What is GeoServer?</h1>
+        <p>
+          GeoServer is an open source server for sharing geospatial data. It is
+          designed for interoperability and excels at publishing any major
+          spatial data source using open standards. With suitable preparation of
+          data it excels at handling very large datasets, both raster and
+          vector. It produces high quality rendering of maps and can handle
+          hundreds to thousands of map layers easily.
+        </p>
+        <h1 class="font-black mb-2 mt-8">Why would I use it?</h1>
+        <p>
+          GeoServer is free software. This significantly lowers the financial
+          barrier to entry when compared to proprietary GIS products. In
+          addition, not only is GeoServer available free of charge, it is also
+          open source. Bug fixes and feature improvements in open source
+          software occur in a transparent manner, often at an accelerated pace
+          compared to closed software solutions. Leveraging GeoServer in your
+          organization also prevents software lock-in, saving costly support
+          contracts down the road.
+        </p>
+      </div>
+      <img
+        src="/assets/images/geoserver_img.png"
+        alt="illustration of geoserver"
+        class="mx-auto px-14 w-full lg:w-1/2 mt-4"
+      />
+      <p class="text-center text-gray-500 text-xs py-2">
+        <a href="https://eatlas.org.au/node/300">Illustration of geoserver</a>
+      </p>
+
+      <div class="mx-auto px-14 py-4 w-full lg:w-1/2">
+        <p>
+          GeoServer can also display data on any of the popular mapping
+          applications such as Google Maps, Google Earth, Microsoft Bing Maps,
+          and MapBox. In addition, GeoServer can connect with traditional GIS
+          architectures such as ESRI ArcGIS.
+        </p>
+        <p class="mt-6">
+          GeoServer has a large and vibrant community consisting of users and
+          developers from all over the world. Support is available through a
+          variety of sources, such as email lists. A fixed release cycle and
+          public issue tracker provides transparency and reliable updates. In
+          addition, commercial support is available from a variety of providers.
+          With GeoServer, you are always in good company.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <div class="bg-gray-900 text-white py-2 text-center text-xs">
+        Copyright &#169; 2023 <br />SpatialSense by Almira Mahsa. All rights
+        reserved.
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

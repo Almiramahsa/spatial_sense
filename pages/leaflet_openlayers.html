@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets//favicon.ico" />
+
+    <title>Spatial Sense Blog | Leaflet & OpenLayers</title>
+    
+  <body>
+    <nav class="navbar flex justify-between items-center py-4">
+      <a href="/index.html" class="flex items-center">
+        <img
+          src="/assets/images/logo.svg"
+          alt="spatial sense logo"
+          class="w-1/2 sm:w-full m-4"
+        />
+      </a>
+      <div>
+        <ul class="flex justify-between space-x-4 mr-12">
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="/pages/about.html">About</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn hover:text-blue-700">Blog</a>
+            <ul
+              class="dropdown-content absolute hidden mt-2 space-y-2 bg-white border border-gray-100 rounded-lg group-hover:block"
+              style="min-width: 150px"
+            >
+              <li>
+                <a
+                  href="/pages/html_css.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >HTML & CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/javascript.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Javascript</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/leaflet_openlayers.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Leaflet & OpenLayers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/geoserver.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >Geoserver</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/postgre_postgis.html"
+                  class="block px-2 py-2 hover:bg-blue-100"
+                  >PostgreSQL & PostGIS</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="hover:text-blue-700 hover:font-semibold">
+            <a href="/pages/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="mb-20">
+        <div class="mx-auto pt-24">
+          <h1 class="text-3xl text-center">
+            What Is <b>Leaflet?</b> What is <b>OpenLayers?</b>
+          </h1>
+          <div class="grid grid-cols-2 text-center text-xs">
+            <p class="text-end">Written by: ThinkGeo |</p>
+            <p class="text-start px-2">
+              <b>Published in</b>
+              <a
+                href="https://thinkgeo.com/blog/leaflet-vs-openlayers-3-which-is-the-better-client-side-javascript-mapping-library"
+                >Think Geo</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="mx-auto p-14 w-full lg:w-1/2">
+            <h1  class="font-black mb-2">Intro</h1>
+            <p>Leaflet and OpenLayers are two popular JavaScript libraries used for creating interactive and customizable maps on the web. They provide developers with tools to integrate maps, geospatial data, and various layers into their web applications, allowing users to explore and visualize geographic information.</p>
+          <h1 class="font-black mb-2 mt-6">What is Leaflet?</h1>
+          <p>
+            Leaflet is a lightweight and user-friendly open-source mapping library. It's designed to be simple to use and easy to extend. Leaflet provides basic mapping functionality, including displaying map tiles, adding markers, popups, and various vector layers.
+          </p>
+          <h1 class="font-black mb-2 mt-8">What is OpenLayers?</h1>
+          <p>
+            OpenLayers is a more feature-rich and powerful mapping library that offers advanced geospatial capabilities. It provides a comprehensive set of tools for working with various map projections, vector data sources, raster layers, overlays, and interactive controls. OpenLayers is suitable for creating complex and highly customized web maps that require extensive interaction, feature editing, and data manipulation.
+          </p>
+        </div>
+        <img
+          src="/assets/images/OpenLayersDynamicStyle-1.webp"
+          alt="illustration of html and css"
+          class="mx-auto px-14 w-full lg:w-1/2 mt-4"
+        />
+        <p class="text-center text-gray-500 text-xs py-2">
+          <a href="https://spatial-dev.guru/2022/01/08/openlayers-style/"
+            >Illustration of using OpenLayers</a
+          >
+        </p>
+  
+        <div class="mx-auto px-14 py-4 w-full lg:w-1/2">
+          <p>
+            Both Leaflet and OpenLayers have active communities, extensive documentation, and examples that make it easier for developers to get started and create interactive maps that suit their specific needs. The choice between the two depends on factors such as project requirements, desired features, and the developer's familiarity with the libraries.
+          </p>
+          
+        </div>
+      </section>
+      <footer>
+        <div class="bg-gray-900 text-white py-2 text-center text-xs">
+          Copyright &#169; 2023 <br />SpatialSense by Almira Mahsa. All rights reserved.
+        </div>
+      </footer>
+      <script src="index.js"></script>
+  </body>
+</html>
